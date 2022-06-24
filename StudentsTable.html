@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyModule">
+<head>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="JavaScript.js"></script>
+    <title></title>
+</head>
+<body ng-controller="myController">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="stu in student">
+                <td>{{stu.name}}</td>
+                <td>{{stu.age}}</td>
+                <td>{{stu.gender}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
